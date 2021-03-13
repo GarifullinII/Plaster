@@ -51,6 +51,16 @@ body {
     .reg();
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+button, input, a {
+    &:focus {
+        outline: none;
+    }
+}
+
 .button {
     padding: 1rem 3rem;
     border-radius: 8px;
@@ -59,6 +69,11 @@ body {
     background-color: @btn-color;
     color: @light;
     border: none;
+    transition: all 0.2s;
+    &:hover {
+        cursor: pointer;
+        background-color: darken(@btn-color, 5%);
+    }
 }
 
 /* Typography */
@@ -76,6 +91,7 @@ section {
         margin-top: 10rem;
         /* Главный заголовок */
         h1 {
+            margin-top: 0;
             margin-bottom: 5rem;
             .bold();
             font-size: 4rm;
@@ -134,7 +150,6 @@ section {
         /* Подписи к полям */
         label {
             position: absolute;
-            left: 50%;
             transform: translateX(-50%) translateY(-50%);
             padding: 0.5rem;
             font-size: 1.3rem;
@@ -182,5 +197,57 @@ section {
         height: 7rem;
         line-height: 7rem;
         color: @text;
+    }
+}
+
+@media (max-width: 991px) {
+    .main {
+        background-position: top right;
+    }
+    .phone-block {
+        text-align: center;
+    }
+    .main-content {
+        margin-top: 3rem;
+    }
+    .main-title {
+        padding-bottom: 3rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .main {
+        background-position: top right;
+    }
+    .header {
+        text-align: center;
+    }
+    .wrap-block {
+        text-align: center;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .main-content {
+        margin-top: 18rem;
+    }
+    .main-form-btn {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 530px) {
+    .main {
+        background-position: top center;
+    }
+    .main-content {
+        margin-top: 20rem;
+    }
+    .header {
+        text-align: center;
+    }
+    .wrap-block {
+        text-align: center;
     }
 }

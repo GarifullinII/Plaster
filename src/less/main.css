@@ -23,6 +23,14 @@ html {
 body {
   font-family: 'ProximaNova_reg', sans-serif;
 }
+a:hover {
+  text-decoration: none;
+}
+button:focus,
+input:focus,
+a:focus {
+  outline: none;
+}
 .button {
   padding: 1rem 3rem;
   border-radius: 8px;
@@ -31,6 +39,11 @@ body {
   background-color: #fcb303;
   color: #ffffff;
   border: none;
+  transition: all 0.2s;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #e3a103;
 }
 /* Typography */
 section {
@@ -51,6 +64,7 @@ section {
   /* Главный заголовок */
 }
 .main-content h1 {
+  margin-top: 0;
   margin-bottom: 5rem;
   font-family: 'ProximaNova_bold', sans-serif;
   font-size: 4rm;
@@ -107,7 +121,6 @@ section {
 }
 .main-form label {
   position: absolute;
-  left: 50%;
   transform: translateX(-50%) translateY(-50%);
   padding: 0.5rem;
   font-size: 1.3rem;
@@ -147,4 +160,53 @@ section {
   height: 7rem;
   line-height: 7rem;
   color: #1a1820;
+}
+@media (max-width: 991px) {
+  .main {
+    background-position: top right;
+  }
+  .phone-block {
+    text-align: center;
+  }
+  .main-content {
+    margin-top: 3rem;
+  }
+  .main-title {
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .main {
+    background-position: top right;
+  }
+  .header {
+    text-align: center;
+  }
+  .wrap-block {
+    text-align: center;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .main-content {
+    margin-top: 18rem;
+  }
+  .main-form-btn {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 530px) {
+  .main {
+    background-position: top center;
+  }
+  .main-content {
+    margin-top: 20rem;
+  }
+  .header {
+    text-align: center;
+  }
+  .wrap-block {
+    text-align: center;
+  }
 }
