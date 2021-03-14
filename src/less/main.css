@@ -49,6 +49,12 @@ a:focus {
 section {
   padding: 10rem 0;
 }
+.section-header {
+  margin: 2rem 0 10rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 3.6rem;
+  text-align: center;
+}
 /* Main */
 .main {
   padding: 3rem 0 5rem;
@@ -175,6 +181,50 @@ section {
     padding-bottom: 3rem;
     text-align: center;
   }
+}
+/* Оформление секции с преимуществами */
+.features-block {
+  text-align: center;
+}
+.features-block h3 {
+  font-size: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  margin-bottom: 3rem;
+}
+.features-block p {
+  display: inline-block;
+  width: 80%;
+  font-size: 1.6rem;
+}
+.features-img {
+  height: 9rem;
+  margin-bottom: 3rem;
+}
+.features-img img {
+  display: block;
+  margin: 0 auto;
+}
+.slick-active {
+  outline: none;
+}
+.arrow {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 99;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+}
+.prev {
+  left: 0;
+  background: url(../img/left-arrow.svg) center no-repeat;
+  background-size: 100%;
+}
+.next {
+  right: 0;
+  background: url(../img/right-arrow.svg) center no-repeat;
+  background-size: 100%;
 }
 @media (max-width: 767px) {
   .main {
