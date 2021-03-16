@@ -1,4 +1,14 @@
 window.addEventListener('DOMContentLoaded', function() {
+    /* Script для модальных всплывающих окон */
+    $('.popup-btn').on('click', function(event) {
+        event.preventDefault();
+        $('.popup').fadeIn();
+    });
+    $('.popup-close').on('click', function(event) {
+        event.preventDefault();
+        $('.popup').fadeOut();
+    });
+    /* Script для слайдера */
     $('.features-slider').slick({
         infinite: true,
         slidesToShow: 4,
