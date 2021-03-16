@@ -376,6 +376,65 @@ section {
     }
 }
 
+/* Секция с отзывами */
+.feedback {
+    background: url(../img/feedback/feedback_bg.jpg) no-repeat center;
+    background-size: cover;
+    &-prev-btn {
+        left: -6rem;
+    }
+    &-next-btn {
+        right: -6rem;
+    }
+    &-text {
+        position: relative;
+        margin-top: 2rem;
+        padding: 1rem;
+        font-style: italic;
+        border: 2px solid @icons-color;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -2rem;
+            left: 4rem;
+            width: 2rem;
+            height: 2rem;
+            background-color: @light;
+            border: 2px solid @icons-color;
+            border-bottom: none;
+            border-top-right-radius: 100px;
+        }
+    }
+    &-slider {
+        padding: 5rem 6rem;
+        background-color: @light;
+        box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+        .media {
+            margin-top: 3rem;
+            font-size: 1.4rem;
+            h4 {
+                .bold();
+            }
+        }
+        p {
+            font-size: 1.6rem;
+        }
+        &-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4rem;
+            height: 5rem;
+            background-color: @light;
+            border: none;
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .main {
         background-position: top right;

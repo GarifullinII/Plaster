@@ -8,6 +8,11 @@ window.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         $('.popup').fadeOut();
     });
+    /* Script с отзывами */
+    $('.feedback-slider_item').slick({
+        prevArrow: '<button type="button" class="feedback-slider-btn feedback-prev-btn"><img src="img/left-arrow.svg" alt="left"/></button>',
+        nextArrow: '<button type="button" class="feedback-slider-btn feedback-next-btn"><img src="img/right-arrow.svg" alt="right"/></button>'
+    });
     /* Script для слайдера */
     $('.features-slider').slick({
         infinite: true,
