@@ -76,6 +76,33 @@ button, input, a, textarea {
     }
 }
 
+.form {
+/* Поле для ввода */
+    &-input {
+        display: block;
+        margin: 2rem 0;
+        width: 100%;
+        border: 1px solid @border-input;
+        border-radius: 5px;
+        padding: 1.5rem;
+    }
+    /* Подписи к полям */
+    label {
+        position: absolute;
+        transform: translateX(-50%) translateY(-50%);
+        padding: 0.5rem;
+        font-size: 1.3rem;
+        background-color: @light;
+    }
+    /* Кнопка отправить заявку */
+    &-btn {
+        display: block;
+        width: 100%;
+        height: 5.5rem;
+        font-size: 1.6rem;
+    }
+}
+
 /* Typography */
 section {
     padding: 10rem 0;
@@ -154,30 +181,7 @@ section {
                 font-size: 1.9rem;
             }
         }
-        /* Поле для ввода */
-        &-input {
-            display: block;
-            margin: 2rem 0;
-            width: 100%;
-            border: 1px solid @border-input;
-            border-radius: 5px;
-            padding: 1.5rem;
-        }
-        /* Подписи к полям */
-        label {
-            position: absolute;
-            transform: translateX(-50%) translateY(-50%);
-            padding: 0.5rem;
-            font-size: 1.3rem;
-            background-color: @light;
-        }
-        /* Кнопка отправить заявку */
-        &-btn {
-            display: block;
-            width: 100%;
-            height: 5.5rem;
-            font-size: 1.6rem;
-        }
+        
         /* Подпись под кнопкой */
         small {
             display: block;
@@ -378,6 +382,7 @@ section {
 
 /* Секция с отзывами */
 .feedback {
+    position: relative;
     background: url(../img/feedback/feedback_bg.jpg) no-repeat center;
     background-size: cover;
     &-prev-btn {
@@ -433,6 +438,46 @@ section {
             }
         }
     }
+    /* Оформление главной формы */
+    &-form {
+        margin-top: 5rem;
+        padding: 4rem 10rem;
+        background-color: @light;
+        text-align: center;
+        h3 {
+            margin-bottom: 1rem;
+            .bold();
+            font-size: 2rem;
+        }
+        label {
+            transform: translate(-50%, 8px);
+        }
+    }
+    &-btn {
+        max-width: 30rem;
+        margin: auto;
+    }
+}
+
+.hand {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 30rem;
+}
+
+@media (max-width: 1199px) {
+    .feedback {
+        &-form {
+            padding: 3rem 5rem;
+        }
+        .fotorama {
+            margin-bottom: 3rem;
+        }
+    }
+    .hand {
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -470,6 +515,16 @@ section {
     .section-header_light {
         margin-bottom: 0;
     }
+    .feedback {
+        &-form {
+            label {
+                transform: translate(-50%, 5px);
+            }
+        }
+    }
+    .hand {
+        display: none;
+    }
 }
 
 @media (max-width: 530px) {
@@ -484,5 +539,12 @@ section {
     }
     .wrap-block {
         text-align: center;
+    }
+    .feedback {
+        &-form {
+            label {
+                transform: translate(-50%, 5px);
+            }
+        }
     }
 }
