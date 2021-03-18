@@ -505,9 +505,33 @@ section {
   background: url(../img/cancel.png) center no-repeat;
   background-size: 70%;
 }
+.problems-list_good {
+  border-color: #46b814;
+}
 .problems-list_good ul li::before {
   background: url(../img/checked_symbol.png) center no-repeat;
   background-size: 70%;
+}
+/* Секция материалы */
+.materials {
+  background: #ffffff;
+}
+.materials-slider {
+  padding-top: 5rem;
+}
+.materials img {
+  display: block;
+  margin: 0 auto;
+}
+.materials-link {
+  color: #46b814;
+  border-bottom: 1px dotted #46b814;
+}
+.materials-link:hover {
+  color: #348a0f;
+}
+.materials-offer {
+  margin-top: 4rem;
 }
 /* Media */
 @media (max-width: 1199px) {

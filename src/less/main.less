@@ -556,11 +556,34 @@ section {
             }
         }
         &_good {
+            border-color: @icons-color;
             ul li::before {
                 background: url(../img/checked_symbol.png) center no-repeat;
                 background-size: 70%;
             }
         }
+    }
+}
+
+/* Секция материалы */
+.materials {
+    background: @light;
+    &-slider {
+        padding-top: 5rem;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    &-link {
+        color: @icons-color;
+        border-bottom: 1px dotted @icons-color;
+        &:hover {
+            color: darken(@icons-color, 10%);
+        }
+    }
+    &-offer {
+        margin-top: 4rem;
     }
 }
 
