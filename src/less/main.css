@@ -179,21 +179,6 @@ section {
   line-height: 7rem;
   color: #1a1820;
 }
-@media (max-width: 991px) {
-  .main {
-    background-position: top right;
-  }
-  .phone-block {
-    text-align: center;
-  }
-  .main-content {
-    margin-top: 3rem;
-  }
-  .main-title {
-    padding-bottom: 3rem;
-    text-align: center;
-  }
-}
 /* Оформление секции с преимуществами */
 .features-block {
   text-align: center;
@@ -416,6 +401,26 @@ section {
   left: 0;
   max-width: 30rem;
 }
+/* Секция со схемой работы */
+.scheme {
+  background: #ffffff url(../img/scheme_bg.jpg) bottom right -10rem no-repeat;
+  background-size: 65rem;
+}
+.scheme-block {
+  min-height: 30rem;
+}
+.scheme h3 {
+  font-size: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.scheme p {
+  font-size: 1.4rem;
+}
+.scheme a {
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+/* Media */
 @media (max-width: 1199px) {
   .feedback-form {
     padding: 3rem 5rem;
@@ -425,6 +430,28 @@ section {
   }
   .hand {
     display: none;
+  }
+}
+@media (max-width: 991px) {
+  .main {
+    background-position: top right;
+  }
+  .phone-block {
+    text-align: center;
+  }
+  .main-content {
+    margin-top: 3rem;
+  }
+  .main-title {
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+  .scheme {
+    background: none;
+    text-align: center;
+  }
+  .scheme-block {
+    min-height: 20rem;
   }
 }
 @media (max-width: 767px) {
