@@ -533,6 +533,41 @@ section {
 .materials-offer {
   margin-top: 4rem;
 }
+/* Посмотрите как мы работаем */
+.tour {
+  background: #ffffff url(../img/tour.jpg) center no-repeat;
+  background-size: cover;
+}
+.tour-subtitle {
+  font-size: 2.2rem;
+}
+/* Дополнительные услуги */
+.upsell {
+  background-color: #286b0a;
+}
+.upsell h2 {
+  color: #ffffff;
+}
+.upsell p {
+  color: #ffffff;
+}
+.upsell-block {
+  min-height: 30rem;
+  text-align: center;
+  color: #ffffff;
+}
+.upsell-blocks {
+  margin-top: 3rem;
+}
+.upsell-block img {
+  display: inline-block;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 30rem;
+}
+.upsell-block p {
+  font-size: 2rem;
+}
 /* Media */
 @media (max-width: 1199px) {
   .feedback-form {
@@ -574,6 +609,10 @@ section {
   }
   .scheme-block {
     min-height: 20rem;
+  }
+  .tour {
+    background: none;
+    background-color: #f5f5f5;
   }
 }
 @media (max-width: 767px) {
